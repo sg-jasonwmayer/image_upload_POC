@@ -15,12 +15,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { UploadComponent } from './upload/upload.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import  { NgxCameraModule } from 'ngx-camera';
+
 
 @NgModule({
     declarations: [
       AppComponent,
       HomeComponent,
-      AboutComponent
+      AboutComponent,
+      UploadComponent,
+      FileUploadComponent
     ],
     imports: [
       BrowserModule,
@@ -31,7 +37,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
       MatIconModule,
       MatButtonModule,
       MatCardModule,
-      MatProgressBarModule
+      MatProgressBarModule,
+      NgxCameraModule
     ],
     providers: [],
     bootstrap: [AppComponent]

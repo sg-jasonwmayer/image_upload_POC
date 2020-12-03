@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
 import { HttpEventType, HttpErrorResponse } from '@angular/common/http';
 import { of } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 import { UploadService } from '../upload.service';
 
 @Component({
